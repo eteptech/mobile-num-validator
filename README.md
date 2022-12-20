@@ -1,3 +1,3 @@
-#This app is to to validate mobile number
+# This app is to to validate mobile number
 
 - Using rapidAP
