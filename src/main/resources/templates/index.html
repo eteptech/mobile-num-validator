@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+alert();
+	const settings = {
+			"async": true,
+			"crossDomain": true,
+			"url": "https://phonenumbervalidatefree.p.rapidapi.com/ts_PhoneNumberValidateTest.jsp?number=%2B23407018186930&country=UY",
+			"method": "GET",
+			"headers": {
+				"X-RapidAPI-Key": "5dbd658595msh27056d181bc418ep1e2fedjsn43b74fe3c73b",
+				"X-RapidAPI-Host": "phonenumbervalidatefree.p.rapidapi.com"
+			}
+		};
+
+		$.ajax(settings).done(function (response) {
+			console.log(response);
+			alert(response);
+		});
+
+	</script>
+</body>
+</html>
