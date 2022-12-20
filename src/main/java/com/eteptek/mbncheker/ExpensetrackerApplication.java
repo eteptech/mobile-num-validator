@@ -1,4 +1,4 @@
-package com.eteptech.mbncheker;
+package com.eteptek.mbncheker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
