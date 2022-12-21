@@ -3,14 +3,15 @@ package com.eteptek.mbncheker.rest.model;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.annotation.processing.Generated;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-
-import jakarta.annotation.Generated;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -27,7 +28,25 @@ private String key1;
 private String key2;
 @JsonIgnore
 private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-private final static long serialVersionUID = -6837261735191199002L;
+private final static long serialVersionUID = 3631860894272635267L;
+
+/**
+* No args constructor for use in serialization
+*
+*/
+public MobileNumber() {
+}
+
+/**
+*
+* @param key1
+* @param key2
+*/
+public MobileNumber(String key1, String key2) {
+super();
+this.key1 = key1;
+this.key2 = key2;
+}
 
 @JsonProperty("key1")
 public String getKey1() {
