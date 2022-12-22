@@ -1,3 +1,7 @@
-# This app is to to validate mobile number
+# This App LookUp mobile Number and the following:
+* Whether it is a valid number 
+* It's region
+* Location
+* Country code
 
-- Using rapidAP
+- Using rapidAPI
