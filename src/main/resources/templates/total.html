@@ -5,16 +5,12 @@
 <title>Mobile Number LookUp Result</title>
 </head>
 <body>
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-<script>
-$(document).ready(function(){
-   $.getJSON("http://localhost:8080/validate", function(result){
-      $.each(result, function(key,value) {
-         $("#productsJson").append(value.id+" "+value.name+" ");
-      }); 
-   });
-});
-</script>
+	<table>
+		<tr th:each="detail: ${result}">
+			<td th:text="${detail.countryCode}"></td>
+			<td th:text="${detail.carrier}"></td>
+			<td th:text="${detail.timeZone_s}"></td>
+		</tr>
+	</table>
 </body>
 </html>
