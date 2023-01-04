@@ -6,7 +6,7 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import com.eteptek.mbncheker.rest.repo.RestClient;
 
 @SpringBootApplication
-public class ExpensetrackerApplication {
+ public class ExpensetrackerApplication {
 	
 	public ExpensetrackerApplication(RestTemplateBuilder restBuilder) {
 		restBuilder.build();
